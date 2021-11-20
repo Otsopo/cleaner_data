@@ -173,7 +173,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serviceImpact/dev/1637427093746-2021-11-20T16:51:33.746Z/serviceImpact.zip"
+                "S3Key": "serverless/serviceImpact/dev/1637442826354-2021-11-20T21:13:46.354Z/serviceImpact.zip"
               },
               "Handler": "handler.serviceImpact",
               "Runtime": "nodejs12.x",
@@ -191,14 +191,14 @@
               "ServiceImpactLogGroup"
             ]
           },
-          "ServiceImpactLambdaVersion1llXxNvycm7cAXo8PTcmPh7NYmHP00mbo88UrLwmzo": {
+          "ServiceImpactLambdaVersionuvmHhDE0J1ULUp8gBoMKdzzyS1r0yZi6UeJSxI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ServiceImpactLambdaFunction"
               },
-              "CodeSha256": "HUrpbe9Lj3v9+gcbJtsXCcUyw8s9NodD3gmfX1u7enk="
+              "CodeSha256": "hNoamPavuspDjA7YNGMTr2fSDEaADYofqACZ3Ozi24Y="
             }
           },
           "ApiGatewayRestApi": {
@@ -319,7 +319,7 @@
               "ServiceImpactLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1637427091738": {
+          "ApiGatewayDeployment1637442823994": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -382,7 +382,7 @@
           "ServiceImpactLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ServiceImpactLambdaVersion1llXxNvycm7cAXo8PTcmPh7NYmHP00mbo88UrLwmzo"
+              "Ref": "ServiceImpactLambdaVersionuvmHhDE0J1ULUp8gBoMKdzzyS1r0yZi6UeJSxI"
             },
             "Export": {
               "Name": "sls-serviceImpact-dev-ServiceImpactLambdaFunctionQualifiedArn"
@@ -535,7 +535,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "ServiceImpactLambdaVersion1llXxNvycm7cAXo8PTcmPh7NYmHP00mbo88UrLwmzo"
+        "versionLogicalId": "ServiceImpactLambdaVersionuvmHhDE0J1ULUp8gBoMKdzzyS1r0yZi6UeJSxI"
       }
     },
     "configValidationMode": "warn",
@@ -557,7 +557,7 @@
     "artifact": "/Users/otso/junktion/cleaner_data/back/.serverless/serviceImpact.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/serviceImpact/dev/1637427093746-2021-11-20T16:51:33.746Z",
+    "artifactDirectoryName": "serverless/serviceImpact/dev/1637442826354-2021-11-20T21:13:46.354Z",
     "artifact": "serviceImpact.zip"
   }
 }
