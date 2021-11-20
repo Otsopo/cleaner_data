@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import ReactDOM from 'react-dom';
+import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      value: null
+    };
+  }
+  render() {
+    return(
+      <>
+      
+      <Grid container spacing={2}>
+  <Grid item xs={8}>
+  <Button variant="contained">Hello World</Button>
+  </Grid>
+  <Grid item xs={4}>
+  <Button variant="contained">Hello World</Button>
+  </Grid>
+  <Grid item xs={4}>
+  <Button variant="contained">Hello World</Button>
+  </Grid>
+  <Grid item xs={8}>
+  <Button variant="contained">Hello World</Button>
+  </Grid>
+</Grid>
+</>
+    )
+  }
 }
 
 export default App;
