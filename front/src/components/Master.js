@@ -12,18 +12,24 @@ import { Grid } from "@mui/material";
 
 export default function BasicCard() {
   return (
-    <Card>
-      <CardContent>
-        <Grid container direction="column" alignItems="center">
-          <Grid item sxs={3} spacing={3}>
+    <Card style={{ backgroundColor: "black", width: "100%" }}>
+      <CardContent style={{ width: "100%" }}>
+        <Grid
+          container
+          direction="column"
+          alignItems="center"
+          spacing={3}
+          style={{ width: "100%" }}
+        >
+          <Grid item style={{ width: "100%" }} spacing={3}>
             <Graph />
           </Grid>
 
-          <Grid item xs={3} spacing={3}>
+          <Grid item style={{ width: "100%" }} spacing={3}>
             <List />
           </Grid>
 
-          <Grid item xs={3} spacing={3}>
+          <Grid item style={{ width: "100%" }} spacing={3}>
             <Offset />
           </Grid>
         </Grid>
